@@ -1,0 +1,33 @@
+{
+    "name": "binary-tree-api",
+    "version": "1.0.0",
+    "description": "A tool to add user nodes to the tree.",
+    "main": "index.ts",
+    "scripts": {
+        "start": "ts-node server/index.ts",
+        "dev": "nodemon server/index.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danishiqbal4/binary-tree-api.git"
+    },
+    "author": "Sheikh Danish Iqbal",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/danishiqbal4/binary-tree-api/issues"
+    },
+    "homepage": "https://github.com/danishiqbal4/binary-tree-api#readme",
+    "dependencies": {
+        "@types/node": "^17.0.23",
+        "express": "^4.17.2",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    },
+    "engines": {
+        "node": "14.16.0"
+    }
+}
