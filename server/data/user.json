@@ -1,12 +1,100 @@
 {
     "users": [
         {
-            "name": "Danish Iqbal",
-            "user_name": "danish_123",
-            "sponsor_user_name": "leader",
-            "position": "center",
+            "name": "Adam",
+            "user_name": "adam_123",
+            "sponsor_user_name": null,
+            "position": null,
             "level": 1,
             "level_index": 1
+        },
+        {
+            "name": "Danish",
+            "user_name": "danish_123",
+            "sponsor_user_name": "adam_123",
+            "position": "left",
+            "level": 2,
+            "level_index": 1
+        },
+        {
+            "name": "Nick",
+            "user_name": "nick_123",
+            "sponsor_user_name": "danish_123",
+            "position": "right",
+            "level": 3,
+            "level_index": 2
+        },
+        {
+            "name": "Barry",
+            "user_name": "barry_123",
+            "sponsor_user_name": "nick_123",
+            "position": "right",
+            "level": 4,
+            "level_index": 4
+        },
+        {
+            "name": "Ross",
+            "user_name": "ross_123",
+            "sponsor_user_name": "barry_123",
+            "position": "left",
+            "level": 5,
+            "level_index": 7
+        },
+        {
+            "name": "Mike",
+            "user_name": "mike_123",
+            "sponsor_user_name": "ross_123",
+            "position": "left",
+            "level": 6,
+            "level_index": 13
+        },
+        {
+            "name": "Matt",
+            "user_name": "matt_123",
+            "sponsor_user_name": "mike_123",
+            "position": "left",
+            "level": 7,
+            "level_index": 25
+        },
+        {
+            "name": "Rachel",
+            "user_name": "rachel_123",
+            "sponsor_user_name": "danish_123",
+            "position": "left",
+            "level": 3,
+            "level_index": 1
+        },
+        {
+            "name": "Pheobe",
+            "user_name": "pheobe_123",
+            "sponsor_user_name": "ross_123",
+            "position": "right",
+            "level": 6,
+            "level_index": 14
+        },
+        {
+            "name": "Harry",
+            "user_name": "harry_123",
+            "sponsor_user_name": "barry_123",
+            "position": "right",
+            "level": 5,
+            "level_index": 8
+        },
+        {
+            "name": "Hamdan",
+            "user_name": "hamdan_123",
+            "sponsor_user_name": "rachel_123",
+            "position": "left",
+            "level": 4,
+            "level_index": 1
+        },
+        {
+            "name": "Joey",
+            "user_name": "joey_123",
+            "sponsor_user_name": "rachel_123",
+            "position": "right",
+            "level": 4,
+            "level_index": 2
         }
     ]
 }
