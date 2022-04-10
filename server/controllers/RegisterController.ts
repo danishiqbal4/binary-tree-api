@@ -1,5 +1,5 @@
-const path = require('path');
-const fs = require('fs');
+const rc_path = require('path');
+const rc_fs = require('fs');
 
 const RegisterController = (req: any, res: any, next: any) => {
 
@@ -7,11 +7,11 @@ const RegisterController = (req: any, res: any, next: any) => {
     let message = '';
     const data = req.body;
 
-    const userFilePath = path.resolve(__dirname, '../data', 'user.json');
-    let userFileObj = JSON.parse(fs.readFileSync(userFilePath, 'utf8'));
+    const userFilePath = rc_path.resolve(__dirname, '../data', 'user.json');
+    let userFileObj = JSON.parse(rc_fs.readFileSync(userFilePath, 'utf8'));
 
-    const treeFilePath = path.resolve(__dirname, '../data', 'tree.json');
-    let treeFileObj = JSON.parse(fs.readFileSync(treeFilePath, 'utf8'));
+    const treeFilePath = rc_path.resolve(__dirname, '../data', 'tree.json');
+    let treeFileObj = JSON.parse(rc_fs.readFileSync(treeFilePath, 'utf8'));
 
     let userFileArr = userFileObj.users;
 
@@ -145,7 +145,7 @@ const RegisterController = (req: any, res: any, next: any) => {
     }
 
     treeFileObj = JSON.stringify(treeFileObj, null, 4);
-    fs.writeFile(treeFilePath, treeFileObj, (err: any) => {
+    rc_fs.writeFile(treeFilePath, treeFileObj, (err: any) => {
         if (err){
             return res.status(500).json({
                 "status": "error",
@@ -159,7 +159,7 @@ const RegisterController = (req: any, res: any, next: any) => {
     const userObj = {
         name: data.name,
         user_name: data.user_name,
-        sponsor_name: data.sponsor_user_name,
+        sponsor_user_name: data.sponsor_user_name,
         position: data.position,
         level: sponsor_level+1,
         level_index: user_level_index
@@ -168,7 +168,7 @@ const RegisterController = (req: any, res: any, next: any) => {
     userFileObj.users.push(userObj);
     userFileObj = JSON.stringify(userFileObj, null, 4);
 
-    fs.writeFile(userFilePath, userFileObj, (err: any) => {
+    rc_fs.writeFile(userFilePath, userFileObj, (err: any) => {
         if (err){
             return res.status(500).json({
                 "status": "error",
